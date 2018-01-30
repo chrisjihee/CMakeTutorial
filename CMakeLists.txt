@@ -11,6 +11,7 @@ include_directories(${PROJECT_BINARY_DIR})
 include_directories(${PROJECT_SOURCE_DIR}/MathFunctions)
 
 add_subdirectory(MathFunctions)
+add_subdirectory(TestPrints)
 set(EXTRA_LIBS ${EXTRA_LIBS} MathFunctions)
 
 add_executable(CMakeTutorial main.cpp)
