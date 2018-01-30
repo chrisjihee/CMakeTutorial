@@ -46,4 +46,18 @@ MESSAGE(STATUS "CMAKE_COMPILER_IS_GNUCC           = " ${CMAKE_COMPILER_IS_GNUCC}
 MESSAGE(STATUS "CMAKE_COMPILER_IS_GNUCXX          = " ${CMAKE_COMPILER_IS_GNUCXX})
 MESSAGE(STATUS "CMAKE_AR                          = " ${CMAKE_AR})
 MESSAGE(STATUS "CMAKE_RANLIB                      = " ${CMAKE_RANLIB})
+
+MESSAGE(STATUS "=========================================================================================================")
+GET_CMAKE_PROPERTY(_variableNames VARIABLES)
+FOREACH (_variableName ${_variableNames})
+    message(STATUS "${_variableName} = ${${_variableName}}")
+ENDFOREACH ()
+
+MESSAGE(STATUS "=========================================================================================================")
+IF(${WIN32})
+    MESSAGE(STATUS "This is built in Windows")
+ELSE()
+    MESSAGE(STATUS "This is NOT built in Windows")
+ENDIF()
+
 MESSAGE(STATUS "=========================================================================================================")
