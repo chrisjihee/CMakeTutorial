@@ -71,6 +71,8 @@ MESSAGE(STATUS "gflags_INCLUDE_DIR: " ${gflags_INCLUDE_DIR})
 MESSAGE(STATUS "gflags_LIBRARIES: " ${gflags_LIBRARIES})
 
 MESSAGE("============================================================================================================")
+SET(SNAPPY_INCLUDE_DIR "C:/Program Files (x86)/Snappy/include")
+SET(SNAPPY_LIBRARIES "C:/Program Files (x86)/Snappy/lib/libsnappy.a")
 FIND_PACKAGE(snappy)
 MESSAGE(STATUS "SNAPPY_INCLUDE_DIR: " ${SNAPPY_INCLUDE_DIR})
 MESSAGE(STATUS "SNAPPY_LIBRARIES: " ${SNAPPY_LIBRARIES})
