@@ -46,6 +46,7 @@ MESSAGE(STATUS "CMAKE_COMPILER_IS_GNUCC           = " ${CMAKE_COMPILER_IS_GNUCC}
 MESSAGE(STATUS "CMAKE_COMPILER_IS_GNUCXX          = " ${CMAKE_COMPILER_IS_GNUCXX})
 MESSAGE(STATUS "CMAKE_AR                          = " ${CMAKE_AR})
 MESSAGE(STATUS "CMAKE_RANLIB                      = " ${CMAKE_RANLIB})
+MESSAGE(STATUS "SYSTEM_LIBS                       = " ${SYSTEM_LIBS})
 
 MESSAGE("============================================================================================================")
 GET_CMAKE_PROPERTY(_variableNames VARIABLES)
